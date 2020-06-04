@@ -1,2 +1,2 @@
 # Final-Year-Project
-Final year project at Ramaiah Institute of Technology
+Final year project on Intrusion detection using Deep neural networks
