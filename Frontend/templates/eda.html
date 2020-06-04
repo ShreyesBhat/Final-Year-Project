@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+    <!--link rel="stylesheet" type="text/css" href={{ url_for('static', filename='style.css') }}-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<div class = "jumbotron bg-dark text-white">
+    <h1 style="margin-left: 14pt;">
+        Data Visualization
+    </h2>
+</div>
+
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <div class="col-md-3 px-md-5">
+            <div class="card" style="width: 20rem; margin: 3pt;">
+                <img class="card-img-top img-fluid" src="static/rand.PNG" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Correlation Matrix</h5>
+                    <p class="card-text">Visual Chart showing correlation between the attributes</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Show</button>
+
+                    <div id="myModal1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <img src="static/corrmatrix.PNG" width= "100%" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>       
+
+        <div class="col-md-3 px-md-5">
+            <div class="card" style="width: 23rem; margin: 3pt;">
+                <img class="card-img-top img-fluid" src="static/heatmap1.PNG" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Heatmap</h5>
+                    <p class="card-text">Exploring featureset correlation using triangular heatmap</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Show</button>
+
+                    <div id="myModal2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <img src="static/heatmap1.png" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="col-md-3 px-md-5">
+            <div class="card" style="width: 25rem; margin-left: 40pt; margin-top: 3pt;">
+                <img class="card-img-top img-fluid" src="static/heatmap3.PNG" width="100%" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Attribute Correlation</h5>
+                    <p class="card-text">Visual representation of attributes contributing higher variance in the data</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">Show</button>
+
+                    <div id="myModal3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <img src="static/heatmap3.png" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        
+    </div>
+</div>
