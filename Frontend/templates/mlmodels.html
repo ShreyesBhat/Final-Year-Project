@@ -3,15 +3,26 @@
     <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='style.css') }}>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
- <h2 style = "margin-left: 150pt; border-radius: 5pt;">Snapshots of ML model results</h2>
-
+ <div class="jumbotron bg-info display-3 text-white">Snapshots of ML model results</div>
+<body style="background: rgba(255,255,255,1);
+background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(169,197,219,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(169,197,219,1)));
+background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(169,197,219,1) 100%);
+background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(169,197,219,1) 100%);
+background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(169,197,219,1) 100%);
+background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(169,197,219,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#a9c5db', GradientType=1 );">
 <div class="grid-container">
     <div class="image">
         <div class="card">
-        <img src={{ url_for('static', filename='mltxtacc.PNG') }} width="100%">
+        <img src={{ url_for('static', filename='mltxtacc.PNG') }} width="150%">
         <div class="container">
-            <h4><b>Classical ML Models results</b></h4> 
+            <h4 style="width: max-content;"><b>Classical ML Models results</b></h4> 
         </div>
     </div> 
     </div>
@@ -19,7 +30,7 @@
         <div class = "card">
         <img src={{ url_for('static', filename='mlacc.PNG') }} width="100%">
         <div class="container">
-            <h4><b>Comparision of accuracies</b></h4> 
+            <h4 style="width: max-content;"><b>Comparision of accuracies</b></h4> 
 
     </div>
     </div>
@@ -32,6 +43,5 @@
     </div>
     </div>
 </div>
-
-
+</body>
 

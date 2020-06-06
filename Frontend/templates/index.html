@@ -19,7 +19,7 @@ background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(169,197,219,1
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#a9c5db', GradientType=1 );">
 
 <div class = "jumbotron bg-primary text-white">
-    <h1 style="margin-left: 14pt;">
+    <h1 class ="display-4" style="margin-left: 14pt;">
         Intrusion Detection System using Deep Neural Networks
     </h2>
 </div>
@@ -37,15 +37,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   
       <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
         <div class="card-body align">
-            <p style="width:1050pt">
+            <p class = "lead" style="width:1050pt">
                 Software to detect network intrusions protects a computer network from unauthorized users, including 
                 perhaps insiders. The intrusion detector learning task is to build a predictive model (i.e. a classifier)
                 capable of distinguishing between "bad" connections, called intrusions or attacks, and "good" normal connections.<br><br>
                 A standard set of data to be audited, which includes a wide variety of intrusions simulated in a military
                 network environment, was provided.
-                The data was obtained from intrusion simulations in an Air Force LAN 
+                The data was obtained from intrusion simulations in an Air Force LAN <br><br>
                 <img src={{ url_for('static', filename='ids.gif')}} style="width: 40%;"><br><br>
-                <p> <b>Intrusion Detection services, unlike firewalls are designed to function <em>out of band</em> with the network</b></p><br>
+                <p class ="lead"> <b>Intrusion Detection services, unlike firewalls are designed to function <em>out of band</em> with the network</b></p><br>
                 <img src={{ url_for('static', filename='ids1.png') }} style="width: 40%;"><br>
             </p> 
         </div>
@@ -62,16 +62,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
         <div class="card-body">
             <h3>We have implemented the following classical ML Models:</h3>
-    <p style="width: 1050pt;"><b><em>Logistic regression</em></b> is a statistical model that in its basic form uses 
+    <p class = "lead" style="width: 1050pt;"><b><em>Logistic regression</em></b> is a statistical model that in its basic form uses 
         a logistic function to model a binary dependent variable</p>
 
-    <p style="width: 1050pt;"> <b><em>Naive Bayes  </em></b>methods are a set of supervised learning algorithms based on applying Bayes’ theorem with the “naive” 
+    <p class = "lead" style="width: 1050pt;"> <b><em>Naive Bayes  </em></b>methods are a set of supervised learning algorithms based on applying Bayes’ theorem with the “naive” 
         assumption of conditional independence between every pair of features given the value of the class variable.</p>
     
-      <p style="width: 1050pt;"><b><em>Decision Trees (DTs)</em></b> are a non-parametric supervised learning method used for classification and regression. The goal is to 
+      <p class = "lead" style="width: 1050pt;"><b><em>Decision Trees (DTs)</em></b> are a non-parametric supervised learning method used for classification and regression. The goal is to 
           create a model that predicts the value of a target variable by learning simple decision rules inferred from the data features.</p>
 
-      <p style="width: 1050pt;"><b><em>Random forest </em></b> is a meta estimator that fits a number of decision tree classifiers on various sub-samples of the dataset
+      <p class = "lead" style="width: 1050pt;"><b><em>Random forest </em></b> is a meta estimator that fits a number of decision tree classifiers on various sub-samples of the dataset
        and uses averaging to improve the predictive accuracy and control over-fitting.</p>
 
        <h4> Apart from these, we have built and tested Deep Neural Networks with hidden layers ranging from 1-5 with the follwoing structures
@@ -98,7 +98,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
           <div class="card-body"><p style="width: 1050pt;">
             
-            <ul>
+            <ul class="lead text-decoration-none">
                 <li> <a href = "dataset">Dataset Description</a> </li>
                 <li> <a href = "mlmodels">Classical Machine Learning Models </a></li>
                 <li> <a href = "eda">Exploratory Data Analysis</a></li>
@@ -117,7 +117,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
     <!-- Copyright -->
     <div class="footer-copyright text-center text-white py-3">© 2020 Copyright:
-      <p>Varun B N, Shreyes Bhat, Suraj S Jarali, Sudarshan K<br> Ramaiah Institute of Technology, Bangalore</p>
+      <p class = "lead">Varun B N, Shreyes Bhat, Suraj S Jarali, Sudarshan K<br> Ramaiah Institute of Technology, Bangalore</p>
     </div>
     <!-- Copyright -->
   

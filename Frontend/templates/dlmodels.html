@@ -19,7 +19,7 @@ background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(169,197,219,1
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#a9c5db', GradientType=1 );">
 
 <div class = "jumbotron bg-primary text-white">
-    <h1 style="margin-left: 14pt;">
+    <h1 class="display-4" style="margin-left: 14pt;">
         Deep Neural Network models for Intrusion Detection
     </h2>
 </div>
@@ -30,14 +30,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
       <div class="card-header" id="headingOne">
         <h2 class="mb-0">
           <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            <h5>About the network models</h5>
+            <h5 class="text-decoration-none">About the network models</h5>
           </button>
         </h2>
       </div>
   
       <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
         <div class="card-body align">
-            <p style="width:1050pt">
+            <p class= "lead" style="width:1050pt">
             We were able
             to replicate results with our learnings from the EDA, and achieved similar performance
             metrics as ML models with only 10 epochs, achieving efficient training time over a very large dataset. To provide a more profound
@@ -51,17 +51,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
       <div class="card-header" id="headingTwo">
         <h2 class="mb-0">
           <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            <h5>Findings</h5>
+            <h5 class="text-decoration-none">Findings</h5>
           </button>
         </h2>
       </div>
       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
         <div class="card-body">
-            <p>A 3 layer network performs the best amongst the ones evaluated</p>
-            <p style="width:1050pt">Since data is actually very linear, 2 or 3 layers of a network would be able
+            <mark class="lead">A 3 layer network performs the best amongst the ones evaluated</mark><br><br>
+            <p style="width:1050pt" class= "lead">Since data is actually very linear, 2 or 3 layers of a network would be able
                 to find the deciding factors. Anything greater, variance in the model increases (which
                 causes the model to lose performance since the network becomes more selective in
-                feature weights ).</p>
+                feature weights)</p>
         </div>
       </div>
     </div>
@@ -69,19 +69,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
       <div class="card-header" id="headingThree">
         <h2 class="mb-0">
           <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            <h5>Contributions</h5>
+            <h5 class="text-decoration-none">Contributions</h5>
           </button>
         </h2>
       </div>
       <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-        <div class="card-body"><p style="width: 1050pt;">
-            We were able to reduce model size and training resources while maintaining a competent performance metric. Also, usage of ModelCheckpoint 
+        <div class="card-body"><p style="width: 1050pt;" class= "lead">
+            We were able to reduce model size and training resources while maintaining a competent performance metric. Also, usage of <code><mark>ModelCheckpoint</mark></code> 
             to reduce the overall number of weights we store per epoch for a DNN model
             model building allows us to deploy the IDS on most (if not all) mobile and routing devices,
-            which was not previously possible due to the bulky nature of the models.</p> <p style="width: 1050pt;">
-              The ModelCheckpoint callback class allows you to define where to checkpoint the model weights, how the file should named and under what circumstances to make a checkpoint of the model.
+            which was not previously possible due to the bulky nature of the models.</p> <p style="width: 1050pt;" class= "lead">
+              The <code><mark>ModelCheckpoint</mark></code> callback class allows you to define where to checkpoint the model weights, how the file should named and under what circumstances to make a checkpoint of the model.
 
-              The API allows you to specify which metric to monitor, such as loss or accuracy on the training or validation dataset. You can specify whether to look for an improvement in maximizing or minimizing the score. Finally, the filename that you use to store the weights can include variables like the epoch number or metric.
+              The API allows you to specify which metric to monitor, such as loss or accuracy on the training or validation dataset. 
+              You can specify whether to look for an improvement in maximizing or minimizing the score. Finally, the filename that 
+              you use to store the weights can include variables like the epoch number or metric.
               
                </p>
         </div>
@@ -92,7 +94,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
         <div class="card-header" id="headingFour">
           <h2 class="mb-0">
             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-              <h5>Snapshots</h5>
+              <h5 class="text-decoration-none">Snapshots</h5>
             </button>
           </h2>
         </div>
@@ -107,12 +109,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
                     <div class="span8">
                         <div class="row">
                             <div class="span4 mr-1"><img src="static\dl1training.PNG" width="90%">
-                                <h6><br>Training with 1 hidden layer<h6></div>
+                                <h6><br><mark class="lead">Training with 1 hidden layer</mark><h6></div>
                             
                         </div>
                         <div class="row">
                             <div class="span4 mt-5 mr-1"><img src="static\dl3training.PNG" width="90%"> 
-                                <h6><br>Training with 3 hidden layers<h6></div></div>
+                                <h6><br><mark class="lead">Training with 3 hidden layers</mark><h6></div></div>
                             
                         </div>
                     </div>
